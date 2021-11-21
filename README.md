@@ -1,1 +1,1 @@
-# python-habits
+# for practicing Python challenges and games. 
