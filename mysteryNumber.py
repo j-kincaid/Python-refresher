@@ -1,5 +1,14 @@
 import random
 
+
+ """
+ Feedback: The first printed statement should clue the user 
+ in to what the program is doing. If they choose 1 in the beginning
+ then the random number will be picked between 1 and 1, it
+ will always be 1. It should say something more like
+A random number will be picked between 1 and the number you input 
+or something along those lines.
+ """  
 top_of_range = input("Type a number between 1 and 10: ")
 
 if top_of_range.isdigit():
@@ -23,4 +32,5 @@ while True:
     else:
         print("That's below the number!")
 print("You guessed it in", guesses, "guesses")
+
 
