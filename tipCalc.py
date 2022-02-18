@@ -11,6 +11,7 @@ tip = int(input("What percentage tip would you like to give? 10, 12, or 15?"))
 party_size = int(input("How many people to split the bill?"))
 bill_with_tip = tip / 100 * bill + bill
 payment_per_guest = round((bill_with_tip / party_size), 2)
+payment_per_guest = "{:.2f}".format(payment_per_guest)
 message = f"Each person should pay: ${payment_per_guest}"
 print(message)
 
