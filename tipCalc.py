@@ -14,6 +14,3 @@ payment_per_guest = round((bill_with_tip / party_size), 2)
 payment_per_guest = "{:.2f}".format(payment_per_guest)
 message = f"Each person should pay: ${payment_per_guest}"
 print(message)
-
-
-# It's still not right!!!
