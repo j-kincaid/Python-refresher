@@ -6,51 +6,28 @@ name2 = input("What is their name? \n")
 
 #Write your code below this line 👇
 
-your_name = "name1".lower()
-their_name = "name2".lower()
+your_names = name1 + name2
+your_names_lower = your_names.lower()
 
-true_count = 0
-love_count = 0
-if your_name.count("t"):
-    true_count += 1
-if their_name.count("t"):
-    true_count += 1
-if your_name.count("r"):
-    true_count += 1
-if their_name.count("r"):
-    true_count += 1
-if your_name.count("u"):
-    true_count += 1
-if their_name.count("u"):
-    true_count += 1
-if your_name.count("e"):
-    true_count += 1
-if their_name.count("e"):
-    true_count += 1
 
-print(true_count)
+t = your_names_lower.count("t")
+r = your_names_lower.count("r")
+u = your_names_lower.count("u")
+e = your_names_lower.count("e")
 
-if your_name.count("l"):
-    love_count += 1
-if their_name.count("l"):
-    love_count += 1
-if your_name.count("o"):
-    love_count += 1
-if their_name.count("o"):
-    love_count += 1
-if your_name.count("v"):
-    love_count += 1
-if their_name.count("v"):
-    love_count += 1
-if your_name.count("e"):
-    love_count += 1
-if their_name.count("e"):
-    love_count += 1
+true = t + r + u + e 
 
-print(love_count)
+l = your_names_lower.count("l")
+o = your_names_lower.count("o")
+v = your_names_lower.count("v")
+e = your_names_lower.count("e")
 
-love_score_concat = str(true_count) + str(love_count)
-love_score = int(love_score_concat)
+love  = l + o + v + e
+
+love_score = true + love
+your_names_lower
+
+
 
 if love_score < 10 or love_score > 90:
     print(f"Your score is {love_score}, you go together like coke and mentos.")
