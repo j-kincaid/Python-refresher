@@ -43,9 +43,9 @@ You see a brilliantly colored bird perching in a tree next to the path. It urges
     print("Swim or wait")
     swim_or_wait = input("Do you swim or wait for a boat? Enter swim or wait.").lower()
     if swim_or_wait == "swim":
-        which_door = input("Good choice! You climb up on the land and see the cave. There are three doors to choose from: A red, blue and yellow one. Enter red, yellow, or blue.").lower()
+        which_door = input("Enter red, yellow, or blue.").lower()
         if which_door == "red":
-            print("Sorry, that was not a good choice. GAME OVER")
+            print("GAME OVER")
         elif which_door == "yellow":
             print('''
 
@@ -65,7 +65,7 @@ You see a brilliantly colored bird perching in a tree next to the path. It urges
             ''')
 
         else:
-            print("The Blue Door of Doom. GAME OVER")
+            print("GAME OVER")
     else:
         
         print('''
@@ -86,7 +86,7 @@ You see a brilliantly colored bird perching in a tree next to the path. It urges
             |/\/\|    |/\/\|
     jro
     **************************************************************  
-    Oh no! A dragon is coming up out of the water and it noticed you! Wait... Oh, how awful. Buzzards are already circling above... GAME OVER! 
+    Oh no! A komodo dragon is coming up out of the water and it noticed you! Wait... Oh, how awful. Buzzards are already circling above... GAME OVER! 
         ''')
 else:
     print('''
@@ -118,4 +118,4 @@ else:
 
 ***********************************************************    
     '''
-        "Oh no! dragons are on the loose and one has attacked your leg. The venom has immobilized you and you will die within the next few hours. GAME OVER." )
+        "Oh no! The komodo dragons are on the loose and one has attacked your leg. The venom has immobilized you and you will die within the next few hours. GAME OVER." )
