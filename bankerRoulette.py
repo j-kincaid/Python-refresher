@@ -10,7 +10,9 @@ names = names_string.split(", ")
 # 🚨 Don't change the code above 👆
 
 #Write your code below this line 👇
-# list_length = len(names)
-index = random.randint(0, names)
-loser = names[index]
+i = int(len(names))
+
+card_toss = random.randint(0, i-1)
+loser = names[card_toss]
 print(f"{loser} is going to buy the meal today!")
+
