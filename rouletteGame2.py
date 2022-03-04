@@ -10,10 +10,7 @@ names = names_string.split(", ")
 # 🚨 Don't change the code above 👆
 
 #Write your code below this line 👇
-# print(names[0])
-# i = int(len(names))
 
-# card_toss = random.randint(0, i-1)
 loser = random.choice(names)
 print(f"{loser} is going to buy the meal today!")
 
