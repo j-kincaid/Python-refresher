@@ -4,7 +4,6 @@ def turn_right():
     turn_left()
     
 def jump():
-    move()
     turn_left()
     move()
     turn_right()
@@ -21,7 +20,10 @@ def jump():
 #         number_of_hurdles -= 1
 
 while not at_goal():
-    jump()
+    if wall_in_front():
+        jump()
+    else:
+        move()
 
 # Use a while loop when you don't care about what number in a sequence
 # you're in, which is different from iterating through a list using a for loop. 
