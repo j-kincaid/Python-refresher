@@ -1,27 +1,20 @@
+from difflib import Match
+
+
 alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
 # direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
 text = input("Type your message:\n").lower()
-shift = int(input("Type the shift number:\n"))
+# shift = int(input("Type the shift number:\n"))
 
 #TODO-1: Create a function called 'encrypt' that takes the 'text' and 'shift' as inputs.
 
-def encrypt(text, shift):
-    same_char = False
-    text_as_list = [len(text)]
-    for c in text:
-        text_as_list += c
-    print(text_as_list[c])
-    
-    for i in alphabet:
-        if alphabet[i] == text_as_list[c]:
-            same_char == True
-    print(same_char)
-
-encrypt(text, shift)
-
-
-
+def encrypt(text):
+    text_as_list = []
+    for char in range(0, len(text)):
+        text_as_list.append(text[char])
+        print(text_as_list)
+encrypt(text)
 
     #TODO-2: Inside the 'encrypt' function, shift each letter of the 'text' forwards in the alphabet by the shift amount and print the encrypted text.  
     #e.g. 
