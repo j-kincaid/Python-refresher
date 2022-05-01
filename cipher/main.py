@@ -29,6 +29,18 @@ def encrypt(plain_text, shift_amount):
 encrypt(plain_text=text, shift_amount=shift)
     
 
+def decrypt(cipher_text, shift_amount):
+    plain_text= ''
+    for letter in cipher_text:
+        # Use the index() method to find the index of the letter we are looping through in the alphabet
+        position = alphabet.index(letter)
+        new_position = position - shift_amount
+        plain_text += alphabet[new_position]
+    print(f"The decoded text is {plain_text}.")
+
+decrypt(cipher_text=text, shift_amount=shift)
+    
+
     #TODO-2: Inside the 'encrypt' function, shift each letter of the 'text' forwards in the alphabet by the shift amount and print the encrypted text.  
     #e.g. 
     #plain_text = "hello"
