@@ -3,7 +3,10 @@ Given a string s, return the index of the first non-repeating character. If none
 Example: "leetcode" → returns 0
 
 
-Example: "aabb" → returns -1
+Examples: 
+A = "aabb" → -1
+A = "loveleetcode" → 2 (the first unique character is 'v')
+
 ==========
 Rationale:
 # Thinking in terms of counts
@@ -12,7 +15,7 @@ Rationale:
 
 """
 
-def first_unique(A):
+def first_unique_char(A):
     s = list(A)
     s.sort()
     i = 0
@@ -26,5 +29,5 @@ def first_unique(A):
             print('0')
         
 A = "aabb"
-first_unique(A)
+first_unique_char(A)
         
